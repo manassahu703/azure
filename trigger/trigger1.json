@@ -1,0 +1,25 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline2",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/adlsconacc1/blobs/input/",
+			"blobPathEndsWith": ".zip",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/5d825cb4-aa1c-4f7a-a687-3ac9c6c7ef86/resourceGroups/res-grp-1/providers/Microsoft.Storage/storageAccounts/adlsstracc1",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
