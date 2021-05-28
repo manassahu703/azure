@@ -1,0 +1,16 @@
+{
+	"name": "DestinationDataset_5np",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "mydb1",
+			"table": "employee"
+		}
+	}
+}
