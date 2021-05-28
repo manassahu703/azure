@@ -231,8 +231,11 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "Binary2",
-						"type": "DatasetReference"
+						"referenceName": "Binary3",
+						"type": "DatasetReference",
+						"parameters": {
+							"file": "*.zip"
+						}
 					},
 					"fieldList": [
 						"childItems"
