@@ -15,7 +15,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": " @dataset().filename",
+				"fileName": " @dataset().filename1",
 				"folderPath": "output",
 				"container": "adlsconacc1"
 			},
