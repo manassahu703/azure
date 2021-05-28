@@ -304,7 +304,8 @@
 									"type": "BinarySource",
 									"storeSettings": {
 										"type": "AzureBlobStorageReadSettings",
-										"recursive": true
+										"recursive": true,
+										"deleteFilesAfterCompletion": false
 									},
 									"formatSettings": {
 										"type": "BinaryReadSettings"
@@ -314,8 +315,11 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "Binary2",
-									"type": "DatasetReference"
+									"referenceName": "Binary3",
+									"type": "DatasetReference",
+									"parameters": {
+										"file": "@item().name"
+									}
 								}
 							]
 						},
@@ -339,8 +343,42 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
+								"source": {
+									"type": "BinarySource",
+									"storeSettings": {
+										"type": "AzureBlobStorageReadSettings",
+										"recursive": true
+									},
+									"formatSettings": {
+										"type": "BinaryReadSettings"
+									}
+								},
+								"sink": {
+									"type": "BinarySink",
+									"storeSettings": {
+										"type": "AzureBlobStorageWriteSettings"
+									}
+								},
 								"enableStaging": false
-							}
+							},
+							"inputs": [
+								{
+									"referenceName": "Binary3",
+									"type": "DatasetReference",
+									"parameters": {
+										"file": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
+								}
+							],
+							"outputs": [
+								{
+									"referenceName": "Binary2",
+									"type": "DatasetReference"
+								}
+							]
 						}
 					]
 				}
