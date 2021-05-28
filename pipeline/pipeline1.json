@@ -23,7 +23,7 @@
 						}
 					},
 					"fieldList": [
-						"itemName"
+						"contentMD5"
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
