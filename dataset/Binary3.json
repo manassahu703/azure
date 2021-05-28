@@ -19,7 +19,7 @@
 					"value": "@dataset().file",
 					"type": "Expression"
 				},
-				"folderPath": "output",
+				"folderPath": "input",
 				"container": "adlsconacc1"
 			}
 		}
