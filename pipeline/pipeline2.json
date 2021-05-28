@@ -198,10 +198,7 @@
 				"inputs": [
 					{
 						"referenceName": "DelimitedText1",
-						"type": "DatasetReference",
-						"parameters": {
-							"filename1": "*.csv"
-						}
+						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
