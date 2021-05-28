@@ -19,7 +19,10 @@
 						"referenceName": "Binary1",
 						"type": "DatasetReference",
 						"parameters": {
-							"filename": "*.zip"
+							"filename": {
+								"value": "employee_20210527.zip",
+								"type": "Expression"
+							}
 						}
 					},
 					"fieldList": [
