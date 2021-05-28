@@ -1,0 +1,9 @@
+{
+	"name": "azr-data-fact-1",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "07ffda86-0a80-477f-a54d-dd4bb4e154d5",
+		"tenantId": "6341ce61-4432-422b-a5fb-3874c3b1f701"
+	}
+}
