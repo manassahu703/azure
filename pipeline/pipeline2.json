@@ -138,7 +138,8 @@
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
-							"enablePartitionDiscovery": false
+							"enablePartitionDiscovery": false,
+							"prefix": "employ*"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings"
